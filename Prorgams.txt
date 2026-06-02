@@ -1,0 +1,160 @@
+# cook your dish here
+# Valid Parenthesis
+# nums = input()
+# arr = []
+
+# for i in nums:
+#     if i == "(" or i == "{" or i == "[" :
+#         arr.append(i)
+#     else:
+#         if len(arr) == 0:
+#             print("False")
+#             exit()
+#         ch = arr[-1]
+#         if (i == ")" and ch == "("):
+#             arr.pop()
+            
+#         elif (i == "}" and ch == "{"):
+#             arr.pop()
+#         elif (i == "]" and ch == "["):
+#             arr.pop()
+#         else:
+#             print("False")
+#             exit()
+# if len(arr) != 0 :
+#     print("False")
+# else:
+#     print("True")
+# ---------------------------------------------
+# aabcxnc ---> AAbcXnc
+# alpha = [0] * 26
+# val = input()
+# for i in val:
+#     index = ord(i) - 97
+#     alpha[index] = 1  
+# for i in range(26):
+#     if alpha[i] == 1 :
+#         first_letter = chr(65 + i)
+#         break
+# for i in range(25,-1,-1):
+#     if alpha[i] == 1 :
+#         last_letter = chr(65 + i)
+#         break
+# for i in val:
+#     if (ord(first_letter) + 32) == ord(i):
+#         val = val.replace(str(i),str(first_letter))
+#     if (ord(last_letter) + 32)  == ord(i):
+#         val = val.replace(str(i),str(last_letter))
+# print(val)
+# ------------------------------------------
+# Seperate Unique and Not Unique Elements
+# nums = list(map(int,input().split()))
+# mapp = {}
+# for i in nums:
+#     if i in mapp:
+#         mapp[i] += 1 
+#     else:
+#         mapp[i] = 1 
+# single = []
+# double = []
+# for key,value in mapp.items():
+#     if value > 1 :
+#         double.append(key)
+#     else:
+#         single.append(key)
+# print(single)
+# print(double)
+# ------------------------------------------
+# inndddiiiiaaaaa
+# names = list(map(str,input().split()))
+# for i in range(len(names)):
+#     res = ""
+#     for j in range(1,len(names[i])+1):
+#         res += (j * names[i][j-1])
+#     print(res)
+# ------------------------------------------
+# Merge two arrays
+# nums1 = list(map(int,input().split()))
+# nums2 = list(map(int,input().split()))
+# ans = []
+# l = 0 
+# r = 0
+# while(l<len(nums1) and r < len(nums2)):
+#     if nums1[l] < nums2[r]:
+#         ans.append(nums1[l])
+#         l += 1 
+#     else:
+#         ans.append(nums2[r])
+#         r += 1
+# while(l<len(nums1)):
+#     ans.append(nums1[l])
+#     l += 1 
+# while(r<len(nums2)):
+#     ans.append(nums2[r])
+#     r+= 1 
+# print(ans)
+# ------------------------------------------
+# Majority elements
+# nums = list(map(int,input().split()))
+# mapp = {}
+# lis = []
+# for i in nums:
+#     if i in mapp:
+#         mapp[i] += 1 
+#     else:
+#         mapp[i] = 1 
+# print(mapp)
+# maxi = 0
+# for key,value in mapp.items():
+#     if value >= maxi:
+#         maxi = value
+#         i = key
+#         lis.append(i)
+# print(lis)
+#------------------------------------------
+# Find all leader elements in the array
+# nums = list(map(int,input().split()))
+# l = 0 
+# r = 1
+# lis = []
+# while(l<len(nums)):
+#     if r == len(nums):
+#             lis.append(nums[l])
+#             l += 1 
+#             r = l+1 
+#     elif nums[l] <= nums[r]:
+#         l = r
+#         r = l+1
+#     else:
+#         r+= 1
+
+# print(lis)
+#------------------------------------------
+# Move Zero's
+# nums = list(map(int,input().split()))
+# l = 0 
+# r = 0
+# while(r<len(nums)):
+#     if nums[r] != 0:
+#         nums[l],nums[r] = nums[r],nums[l]
+#         l+= 1
+#         r+= 1
+#     else:
+#         r+= 1
+# print(nums)
+# ------------------------------------------
+# nums = list(map(int,input().split()))
+# print("og:",nums)
+# for i in range(len(nums)):
+#     print(f"{i} --> {nums[i]}")
+# print("Last No:",nums[-1])
+# nums.insert(1,15)
+# print("Inserted No:",nums)
+# nums.extend([40,50])
+# print("Extended No:",nums)
+# nums.pop()
+# print("Pop:",nums)
+# nums.remove(15)
+# print("Removed 15:",nums)
+# nums.pop(2)
+# print("Pop at a specific index:",nums)
