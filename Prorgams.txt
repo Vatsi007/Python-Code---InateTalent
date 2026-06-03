@@ -1,4 +1,53 @@
 # cook your dish here
+# -----------------------------------------
+# Reverse String
+# s = input()
+# ss = ""
+# for i in s:
+#     ss = i + ss
+# print(ss)
+# -----------------------------------------
+# Remove Special Characters
+# s = input()
+# ss = ""
+# for i in s:
+#     if i.isalnum():
+#         ss += i
+# print(ss)
+# -----------------------------------------
+# Vowels and Consonants
+# s = input()
+# vow_ct = 0
+# con_ct = 0
+# for i in s :
+#     if i in "aeiou":
+#         vow_ct += 1
+#     else:
+#         con_ct += 1
+# print(vow_ct,con_ct)
+# -----------------------------------------
+# Duplicate Elements
+# from collections import Counter
+# nums = list(map(int,input().split()))
+
+# mapp = Counter(nums)
+
+# for key,value in mapp.items():
+#     if value > 1:
+#         print(key)
+# -----------------------------------------
+# Palindrome
+# s = input()
+# l = 0 
+# r = len(s) - 1
+# while(l<r):
+#     if s[l] != s[r]:
+#         print("No")
+#         exit()
+#     l+= 1
+#     r-= 1
+# print("Yes")
+# -----------------------------------------------
 # Valid Parenthesis
 # nums = input()
 # arr = []
